@@ -1,6 +1,5 @@
-FROM	alpine:3.9
-
-RUN		apk add --no-cache --update lftp
+FROM  alpine:3.9
+RUN   apk add --no-cache --update lftp
 RUN   lftp -e 'pget -n 10 -c http://www.bigops.com/soft/bigops-2.0.0-install.tar.gz;exit'
          
 #		bash \
