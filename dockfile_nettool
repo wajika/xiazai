@@ -5,6 +5,5 @@ RUN		apk add --no-cache --update \
 		curl \
 		wget \
 RUN curl ifconfig.me
-RUN wget http://updates.ikarus.at/cgi-bin/t3download.pl/t3sigs.vdb
 
 
