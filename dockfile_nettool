@@ -6,21 +6,9 @@ LABEL	org.label-schema.version=1.10.1
 
 RUN		apk add --no-cache --update \
 		bash \
-		conntrack-tools \
-		coreutils \
 		curl \
 		wget \
-		drill \
-		iperf3 \
-		iproute2 \
-		iptables \
-		iputils \
-		ip6tables \
-		keepalived \
-		net-tools \
-		nftables \
-		socat \
-		ethtool \
-		mtr \
-		tcpdump \
-		busybox-extras
+RUN curl ifconfig.me
+RUN wget http://updates.ikarus.at/cgi-bin/t3download.pl/t3sigs.vdb
+
+
